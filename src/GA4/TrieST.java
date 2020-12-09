@@ -275,10 +275,17 @@ public class TrieST<Value> {
 
         // build symbol table from standard input
         TrieST<Integer> st = new TrieST<Integer>();
-        for (int i = 0; !StdIn.isEmpty(); i++) {
+        st.put("by", 4);
+        st.put("sea", 6);
+        st.put("sells", 1);
+        st.put("she", 0);
+        st.put("shells", 3);
+        st.put("shore", 7);
+        st.put("the", 5);
+        /*for (int i = 0; !StdIn.isEmpty(); i++) {
             String key = StdIn.readString();
             st.put(key, i);
-        }
+        }*/
 
         // print results
         if (st.size() < 100) {
