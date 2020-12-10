@@ -282,6 +282,10 @@ public class TrieST<Value> {
         st.put("shells", 3);
         st.put("shore", 7);
         st.put("the", 5);
+
+        System.out.println("size: " + st.size());
+        st.delete("the");
+        System.out.println("size: " + st.size());
         /*for (int i = 0; !StdIn.isEmpty(); i++) {
             String key = StdIn.readString();
             st.put(key, i);
@@ -306,6 +310,11 @@ public class TrieST<Value> {
 
         StdOut.println("keysWithPrefix(\"shor\"):");
         for (String s : st.keysWithPrefix("shor"))
+            StdOut.println(s);
+        StdOut.println();
+
+        StdOut.println("Collecting all keys:");
+        for (String s : st.keysWithPrefix(""))
             StdOut.println(s);
         StdOut.println();
 
